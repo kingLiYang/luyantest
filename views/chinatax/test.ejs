@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="/lib/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<iframe src="http://localhost:3000/chinatax/manuscriptList/jtxw" style="width:100%; height: 600px; " onload="loadFrame(this)"></iframe>
+<script>
+    $(function () {
+        $.getJSON("http://localhost:3000/chinatax/esUpperLower/4b195bac8eee4efcafb5a21c9caec478",function(data){
+			alert("提交成功:"+data.data);
+		});
+    })   
+	function getIframe(iframe){
+		var regexpParam = /\??([\w\d%]+)=([\w\d%]*)&?/g; //分离参数的正则表达式
+		var targetEle = document.getElementsByTagName(iframe)[0];  
+		var paramMap = null;  
+		if(!!targetEle) {
+			let url =  window.location.href
+			let urlArr = url.split('/')[4]
+		}
+		return urlArr; //返回结果集
+	}
+	console.log("iframe",getIframe('iframe'))
+	function loadFrame(obj) {
+		var url = obj.contentWindow.location.href;
+		if(url.indexOf("bizOrderId") != -1) {
+		console.log(url);
+		}
+	}
+</script>
+</body>
+</html>

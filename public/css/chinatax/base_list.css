@@ -1,0 +1,123 @@
+.tableBox{width: 95%;display: flex;margin: 0 auto;background-color:#ffffff;font-size: 14px;}
+.searchBox{display: flex;align-items: center;margin-bottom:22px;padding: 5px 0px;width: 100%;background-color: #ebebeb;}
+.searchT{width: 24%;text-align: center;}
+.searchT span{display: inline-block;padding: 0 5%;}
+.searchT tr td:nth-child(even){width: 2px;height: 20px;background-color: #ccc;text-align: center;}
+.searchT tr td:nth-child(odd){width: 75px;text-align: center;}
+.conBox{display: flex;width: 75%;}
+.conBox select{width:90px;height:32px;border:none;background:#ffffff;}
+.conBox span {display: inline-block;cursor: pointer;width: 78px; text-align: center;height:32px;line-height: 32px;}
+.conBox .spanS{background: #116CBF;}
+.conBox .spanG{background: #CC0001;} 
+.conBox input{background:#ffffff;border:none;width:70%;height:30px}
+.conBox a{color: white;}
+.leftList{width:100%;margin-right: 20px;background: #ebebeb;max-width: 230px;overflow-x:auto;}
+.left_list li{max-width: 100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;line-height: 1.8;}
+.left_list ul{display: none;}
+.left_list .show_list{display:block;padding: 10px;}
+.headerBg ul{display: flex;}
+.headerBg{border-radius: 8px 8px 0px 0px;color: white;background: #116CBF;line-height: 3;font-weight: bold;font-size: 16px;text-align: center;}
+.headerBg ul .rightTitle{text-align: center;}
+.rightList{width: 80%;}
+.bm_white14{width:100%;height:42px}
+.right_list ul li{height: 40px;line-height: 40px; display: flex;}
+.right_list ul li:nth-child(even){background-color: #e4e8f0;}
+.right_list ul li:nth-child(odd){background-color: #F7F7F7;}
+.right_list ul li:nth-child(odd) .right_l{border-left: 1px solid #fff;}
+.right_list ul li:nth-child(even) .right_l{border-left: 1px solid #e4e8f0;}
+.right_l{display: inline-block;text-align: center;}
+.rightNum{width: 50px;}
+.rightTitle a{width: 335px;}
+.rightTitle{width: 348px;max-width: 348px;text-align: left;padding: 0px 5px ;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.rightTime{width: 108px;}
+.rightTxt{width: 145px;max-width: 148px;padding: 0px 5px ;}
+.show_title{border: 1px solid #333;width: 435px;height: 100px;z-index: 1000;position: absolute;font-size: 12px;padding: 5px;background-color: white;display: none;}
+.right_list ul li .rightTitle .show_title ul li{display: flex;line-height: 2; background-color: #fff; height: 25px;}
+.show_title ul li div{flex: 1;font-weight: bold;}
+.show_title ul li div span{font-weight:normal;margin-left: 10px;}
+.bz_title{cursor: pointer;}
+.active{color: blue;}
+.activeList {color: #CC0001;}
+/* .activeList a {color: #CC0001;} */
+.icon{width: 18px;height: 18px;display: inline-block;vertical-align: middle;}
+.minus{cursor: pointer;background: url(../../images/chinatax/base/minus.gif);}
+.line{background: url(../../images/chinatax/base/line.gif);}
+.join{background: url(../../images/chinatax/base/join.gif);}
+.plus{background: url(../../images/chinatax/base/plus.gif);}
+.folderopen{background: url(../../images/chinatax/base/folderopen.gif);}
+.joinbottom{background: url(../../images/chinatax/base/joinbottom.gif);}
+.mask{background: rgba(0,0,0,0.8);width: 100%;height: 100%;position: fixed;top: 0px;left: 0px;z-index: 1100;display: none;}
+.maskBox{width: 80%;margin: auto;background: white;/* position: relative; */position: fixed;top: 50%; left: 50%;transform: translate(-50%,-50%);}
+.maskCon{display: flex;justify-content: center;width: 100%;font-size: 14px;}
+.maskConLeft{line-height: 2.5;display: flex;justify-content: flex-end;}
+.maskConLeft li{background: #eee;width: 75px;text-align: center;margin: 20px 0px;}
+.maskConLeft li:last-child{margin-top: 50px;}
+.maskHeader{background: #EEEEEE;text-align: center;font-weight: bold;color: blue;font-size: 22px;line-height: 2;}
+.maskConRight{width: 64%;margin-left: 10px;}
+.maskConRight ul li{margin: 20px 0px;line-height: 35px;height: 35px;display: flex;}
+.maskConRight ul li:first-child input{width:100%;height: 32px;border: 1px solid #ccc;}
+.maskConRight ul li .textNumber{width: 270px;border: 1px solid #ccc;}
+.maskConRight ul li textarea{width: 100%;height: 80px; border: 1px solid #ccc;}
+.maskConRight .maskLiDiv{width: 42%;border: 1px solid #ccc;}
+.maskConRight .maskOption,.maskConRight .maskLiDivS{cursor: pointer;}
+.maskConRight .maskLiDivS{width: 35%;margin:0px  10px;}
+.maskRspan{background: #eee;display: inline-block;width: 75px;text-align: center;margin: 0px 10px;}
+.maskFoot{text-align: center;margin: 30px 0px;}
+.maskFoot span{display: inline-block;width: 150px;line-height: 2.5;text-align: center;border-radius: 5px;}
+.maskFoot span a,.maskClose a,.optionSure a{color: white;}
+.maskSearch{background: #015092;}
+.maskSearchNo{background: #666;}
+.maskClose{width: 25px;height: 25px;line-height: 23px;text-align: center;font-size: 22px;position: absolute;top: -10px;right: -10px;border: 3px solid #FFFFFF;border-radius: 50%;background: #666;}
+.maskClose:hover{background: blue;}
+.maskO{width: 100%;height: 100%;position: fixed;top: 0;left: 0;background: rgba(255,255,255,0);display: none;}
+.optionMask{width: 323px;height: 600px;border: 1px solid #666;background: white;position: absolute;top:50%;left: 50%;transform: translate(-50%,-50%);}
+.optionMaskH{background: #eee;padding:5px 20px;display: flex;justify-content: space-between;align-items: center;}
+.optionMaskH span a{font-size: 22px;}
+.optionMaskH span a:hover{color: #666;}
+.optionSure{position: absolute;bottom: 10px;right: 10px;text-align: center;background: #2e8ded;line-height: 30px;width: 60px;}
+.optionMaskCon{font-size: 14px;padding: 20px;line-height: 2;max-height: 460px;max-width: 285px;overflow-y: auto;overflow-x: auto;}
+.optionMaskCon ul{display: none;}
+.optionMaskCon li{max-width: 280px;white-space:nowrap;}
+.optionMaskCon input[type=radio]{width: 15px;}
+.activeHide{display: none;}
+.ydMaskCon{display: none;}
+.prompt{color: red;position: absolute;top: 0;left: 50%;transform: translate(-50%);display: none;}
+@media (max-width: 1024px){
+.maskConRight{width: 86%;}
+}
+@media (max-width: 768px){
+html,body{font-size: 12px;}
+.tableBox{flex-wrap: wrap;width: 100%;font-size: 12px;}
+.leftList{max-width: 100%;margin-right: 0;}
+.rightList{width: 100%;}
+.headerBg{line-height: 1;}
+.bm_white14{line-height: 2;height: 30px;}
+/* }
+@media (max-width:320px){ */
+.headerBg{font-size: 14px;}
+.searchBox{flex-wrap: wrap-reverse;margin-bottom: 0;padding: 0px;}
+.conBox .spanG{width: 111px;}
+.searchT{font-size: 18px;}
+.searchT,.conBox{width: 100%;}
+.rightNum,.rightTitle,.rightTime,.rightTxt{line-height: 2;}
+.rightNum{width: 90px;}
+.rightTime,.rightTxt{width: 230px;}
+.right_list .right_l{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;line-height: 2;}
+.right_list ul li{height: 30px;line-height: 30px;}
+/* } */
+/* @media (max-width: 580px){ */
+.maskCon{display: none;}
+.ydMaskCon{width: 100%;height: 100%;display: block;}
+.ydConLiLeft ul li{margin: 8px 0px;text-align: center;height: 20px;}
+.ydConLiLeft ul li span{display:inline-block;width: 64px;background: #eee;}
+.ydConLiLeft ul li:last-child{margin-top:42px ;}
+.ydConLiLeft{width:25%;float:left;}
+.ydConLiRight{float:left;width: 70%;}
+.ydConLiRight li {cursor: pointer;margin: 8px 0px;border:1px solid #999;height: 18px;}
+.ydConLiRight ul li:last-child{height: 80px;}
+.ydConLiRight ul li input{width: 100%;border: none;height: 11px;}
+.ydConLiRight textarea{width: 97%;border: none;}
+.maskFoot{margin: 10px 0px;}
+.optionMask{width: 100%;height: 100%;}
+.clearBoth{clear: both;}
+}

@@ -1,0 +1,95 @@
+.w700{width: 700px;}
+.w280{width: 280px;}
+
+.boder{height: 3px;background: #ededed;width: 100%;overflow: hidden;}
+
+.common_list{border: 1px solid #dcdcdc;background: #FFFFFF;}
+.title{border-bottom: #1369c0 solid 1px;background: #f7f7f7;line-height: 38px;}
+.title a{background: #FFFFFF;display: inline-block;line-height: 36px;margin-bottom: -1px;padding: 0 10px;color: #06c;border-top: #1369c0 solid 2px;float: left;}
+.title .title_time{float: right;}
+.title .title_time span{padding: 0px 5px;background: #0084C1;color: white;margin-right:5px;cursor: pointer;}
+.common_list_ggds{border:none; border-top: 2px solid #dcdcdc; }
+.ggds{background:url(../images/public/gbdq_1.jpg) no-repeat; margin-top:-2px;color:#116cbf;}
+.ggds a{line-height: 44px; font-size: 18px;color: #116cbf;font-weight: bold;margin-left:20px;}
+.list li.ggds_text:hover a{color: #6666666;}
+.list li.ggds_text:hover span{color: #6666666;}
+.list{padding: 10px 15px;}
+.list li{line-height: 32px;font-size: 14px;height: 32px;}
+.list li:hover a,.list li:hover span{color:#db493a;}
+.list li:nth-child(5n){ border-bottom: 1px #dcdcdc solid; margin-bottom: 15px; padding-bottom: 15px;}
+.list li a{display: inline-block;width: 72%; overflow: hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;white-space:nowrap;background: url(/images/chinatax/xwfb/list_bg.gif) no-repeat left 14px;padding-left: 15px;}
+.list li span{float: right;font-size: 12px;color: rgb(192, 192, 192);padding-right: 15px;}
+.spxw{border: 1px solid #dcdcdc;background: #e6e8ed;margin-top: 25px;}
+.title2{background:#d2d3d7;padding:0 15px;border-bottom: 1px solid #06c;line-height: 35px;}
+.title2 a{display: inline-block;line-height: 35px;border-bottom: 2px solid #06c;padding: 0 10px;color: #06c;}
+.spxw_list{padding: 10px 10px;}
+.spxw_list li{overflow: hidden; font-size: 14px; margin-bottom: 10px;}
+.spxw_list li img{width: 106px;height: 78px;float: left;display: block;}
+.spxw_list li p{float: right;font-size: 14px;line-height: 20px;width: 140px;}
+.spxw1_list li p{padding: 20px 0;}
+.spxw_list li p span{display: block;line-height: 20px;margin: 10px 0;font-size: 12px;}
+.swxw{border: 1px solid #dcdcdc;background: #e6e8ed;}
+.swxw_list{padding: 10px;}
+.swxw_list li{line-height: 20px;font-size: 14px;margin-bottom: 10px;}
+
+.sv_rlist{margin:15px 23px;}
+.sv_rlist li{margin-bottom:15px;}
+.sv_rlist li img{width: 233px; height: 205px;}
+
+.spxw,.swgbright{border: 1px solid #dcdcdc;background: #e6e8ed;margin-top: 25px;}
+.swgbright{padding: 20px; line-height:30px; color:#4c4c4c; font-size:14px; margin-top:8px;}
+.swgbright p{width: 100%;font-size: 14px; line-height:30px; color:#4c4c4c;}
+.swgbright p img{display: block;margin: 0 auto;}
+.bulletin_btn a{width:79px; height:26px; line-height:26px; text-align:center; font-size:14px; float: left; background: #4b8de3; margin-top: 4px; margin-right: 6px; color:#fff; padding: 0; border-radius: 2px; border: 1px solid #3b75c7;}
+.bulletin_search{background-color:#e6e8ed; border:1px solid #dcdcdc; padding:18px; margin-top:20px; box-shadow:1px 2px 2px #cccccc;position: relative;}
+.bulletin_search_title{font-size:16px; margin-bottom:15px; color:#06c;}
+.bulletin_search_criteria{font-size:0;}
+.bulletin_search_criteria select{vertical-align:middle; height: 21px; line-height: 21px;}
+.bulletin_search_criteria input{vertical-align:middle; width:160px; padding:0 2px;}
+.bulletin_search_btn{overflow:hidden; margin-top:15px;}
+.bulletin_search_btn a{float:left; width:79px; height:29px; line-height:29px; text-align:center; color:#ffffff; font-size:14px; background: #4b8de3; border-radius: 2px; border: 1px solid #3b75c7;}
+.gb{font-size: 14px; color: #000; padding: 15px 15px 0; font-weight: normal;}
+.bulletin_btn .bulletin_btn_hide{display: none;}
+/*æ–°æ ·å¼*/
+#pagination-input{ width:40px; height:24px; line-height:18px; margin:0 5px; padding:0; overflow:hidden; border:1px solid #ccc;}
+#page_div .pagination-index,#page_div .pagination-num{color: #666666;border: 1px #b2b2b2 solid;padding:5px 12px;margin-right:6px;text-align:center;font-size:14px;}
+#page_div .pagination-index a, #page_div .pagination-num a{padding:0px; margin:0px;text-align:center;  color:#666666; display:block; font-size:14px;  }
+#page_div pagination-num:hover, #page_div{padding:0px; margin:0px;text-align:center; font-size:14px;}
+#page_div .pagination_index_last{width:260px; float:right; text-align:right; margin:0 auto;}
+
+#page_div a.hover{background-color: #257295;color:#fff;font-size:14px;}
+#page_div a.hover a:hover{ color:#fff;}
+/*-------åˆ†é¡µ---------*/
+.page_num{padding-top:36px; padding-bottom:20px;height:auto;overflow:hidden;width:96%;margin:auto;font-size:14px; clear: both;}
+#page_div{/* height:30px; */color:#000;margin:0 auto;line-height: 30px;}
+
+#page_div .pagination_index{ color: #104c6e; border: 1px #b2b2b2 solid; padding:3px 8px;
+margin-right:2px; float: left;text-align:center; font-size:12px;}
+#page_div .pagination_index a{padding:0px; margin:0px;text-align:center;  color:#666666; display:block; font-size:12px;display: inline-block; }
+#page_div .pagination_index a:hover{color:#cc0001; font-size:12px;}
+
+#page_div div.page_loca{ background-color:#104c6e;}
+#page_div div.page_loca a{ color:#fff; font-size:12px;}
+#page_div div.page_loca a:hover{ color:#fff;}
+
+#page_div .pagination_index_last{border: none; width: auto; float: left; text-align: left;}
+#page_div .pagination_index_last .page_a_tz{ border: 1px #b2b2b2 solid; padding:3px 8px;}
+#pagination_input{ width:20px; height:16px; line-height:16px; margin:0 8px; padding:0; overflow:hidden; border:1px solid #ccc;}
+
+.listimg li{float:left;background: #e6e8ed;width: 30%;margin-left: 2.5%;margin-top: 25px;}
+.listimg{overflow: hidden;}
+.listimg li a{ width:100%; font-size:14px; line-height:22px; text-align:center; display:block;}
+.listimg li a img{width: 100%; height: auto;}
+.listimg li a span{text-align: left;padding:5px 10px;display: block;font-size: 14px;min-height: 44px;}
+.ctplb li{width: 30%;margin-left: 2.5%;margin-top: 25px; height: 300px;}
+.ctplb li a img{width: 100%; height: auto;}
+@media screen and (max-width:991px){
+	.w280{display: none;}
+	.w700{width: 100%;}
+	.xxgkxs{width: 100%; display: block; margin-top: 25px; text-align: center;}
+	.sv_rlist li img{width: 100%; height: auto;}
+	.ctplb li{ max-height: 200px;}
+}
+@media screen and (max-width:420px){
+	.listimg li{width:47%; margin-left: 2%; max-height: 142px; overflow: hidden;}
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content=" width=device-width,user-scalable=no,initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>国家税务总局</title>
+	<link rel="stylesheet" href="/css/chinatax/common.css">
+	<link rel="stylesheet" href="/css/chinatax/list.css">
+    <script type="text/javascript" src="/lib/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="common">
+		<div class="BreadcrumbNav">
+		    您所在的位置：<a href="http://www.gov.cn">首页</a>  &gt;  信息公开  &gt; <%=channelName%>
+		</div>
+			<div class="fl w700">
+				<div class="common_list">
+					<div class="title">
+						<a href="javascript:;"><%=channelName%></a>
+						<div class="clear"></div>
+					</div>
+					<ul class="list">
+						<%if(data.results.length > 0){%>
+						<% for(var i=0; i<data.results.length; i++) {%>
+						<li><a href="<%= data.results[i].url %>" target="_blank"><%= data.results[i].title %></a><span>[<%= data.results[i].publishedTimeStr.trim().substring(0,10)%>]</span></li>
+						<% } %><% } %>
+					</ul>
+					<div class="page_num">
+						<div class="newspage cl">
+							<ul>
+							    <li><a href="<%=locationUrl%><%=data.page>1?data.page-1:data.page%>">上一页</a></li>
+							    <%if(data.total/data.rows>=10){%>
+							    <%if(data.page-5<=0){%>
+							    <%var a = 1%>
+							    <%}%>
+							    <%if(data.page-5>0 && data.page+5<=(data.total/data.rows)){%>
+							    <%var a = data.page-5%>
+							    <%}%>
+							    <%if(data.page+5>(data.total/data.rows)){%>
+							    <%var a = data.total/data.rows-9%>
+							    <%}%>
+							    <%for(var i=a; i<a+10; i++){%>
+							    <%if(i == data.page){%>
+							    <li><a style="background-color:#9a9a9a" href="<%=locationUrl%><%=i%>"><%=i%></a></li>
+							    <%}else{%>
+							    <li><a href="<%=locationUrl%><%=i%>"><%=i%></a></li>
+							    <%}}%><%}else{%>
+							    <%for(var i=1; i<data.total/data.rows+1; i++){%>
+							
+							    <%if(i == data.page){%>
+							    <li><a style="background-color:#9a9a9a" href="<%=locationUrl%><%=i%>"><%=i%></a></li>
+							    <%}else{%>
+							    <li><a href="<%=locationUrl%><%=i%>"><%=i%></a></li>
+							    <%}%>
+							    <%}%><%}%>
+							
+							    <li><a class="next" href="<%=locationUrl%><%=data.page<data.total/data.rows?parseInt(data.page)+1:data.page%>">下一页</a></li>
+							    <li>共<%=Math.ceil(data.total/data.rows)%>页</li>
+								<li><span>到第</span><span><input id="pnum" class="textnum" type="text" size="1" value=<%=data.page<Math.ceil(data.total/data.rows)?parseInt(data.page)+1:data.page%>></span><span>页</span></li>
+							    <li><input type="button" class="newspageBtn" value="确定" id="submit"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="boder"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<script>
+	    $(function () {
+	        var locationUrl = "<%=locationUrl%>";
+	        $("#submit").click(function(){
+	            window.location.href = locationUrl.replace(/&amp;/g, "&") + $("#pnum").val();
+	        });
+	    })
+	</script>
+</body>
+
+</html>

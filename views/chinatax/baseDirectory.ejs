@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content=" width=device-width,user-scalable=no,initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>政府信息公开目录</title>
+		<link rel="stylesheet" href="/css/chinatax/common.css">
+		<link rel="stylesheet" href="/css/chinatax/list.css">
+		<link rel="stylesheet" href="/css/chinatax/base_list.css">
+		<link rel="stylesheet" href="/css/chinatax/calendar.css">
+		<link rel="stylesheet" href="/css/chinatax/base_page.css">
+		<script type="text/javascript" src="/lib/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="common">
+				<div class="BreadcrumbNav" channelid = "<%=channelId%>" channelcode="<%=channelCode%>">
+					您所在的位置：<a href="http://www.gov.cn">首页</a> &gt; 信息公开 &gt; 主动公开基本目录
+				</div>
+				<div class="common_list">
+					<div class="searchBox">
+						<div class="searchT">
+							<span class="bz_title active" channelid="<%=channelId%>">主题</span>
+							<span class="bz_title" channelid="f3f5c95b7ec64e12b36bfc55ddda5f75">机构</span>  <!--  元数据id-->
+							<span class="bz_title" channelid="b219f8c7de314b9fb7837186168991c3">体裁</span>
+						</div>
+						<div class="conBox">
+							<select name="selector" id="selector">
+								<option value="title">标题</option>
+								<option value="content">内容</option>
+							</select>
+							<input type="text" name="textfield" id="searchContent" />
+							<span class="spanS"><a href="javascript:;" id="search">检索</a></span>
+							<span class="spanG"><a href="javascript:;" class="searchBase" id="searchBase">高级检索</a></span>
+						</div>
+					</div>
+					<div class="tableBox">
+						<div class="leftList">
+							<div class="bm_white14 headerBg" id="list_title">主题分类</div>
+							<div class="left_list">
+								<ul class="show_list" id="svobjcatContent"></ul>
+								<ul id="organcatContent"></ul>
+								<ul id="themecatContent"></ul>
+							</div>
+						</div>
+						<div class="rightList">
+							<div class="headerBg">
+								<ul>
+									<li class="right_l rightNum">序号</li>
+									<li class="right_l rightTitle">标题</li>
+									<li class="right_l rightTime">发布时间</li>
+									<li class="right_l rightTxt">发文字号</li>
+								</ul>
+							</div>
+							<div class="rightListTab">
+								<div class="right_list">
+									<ul class="list_ul">
+										<CMSPRO_DOCUMENTS id="codeId_list" DOCUMENTTYPE="0|1|2|3" NUM="" STARTPOS="0" CHANNELCODE="" PAGESIZE="20" PAGENAVIGATIONID="page_div" PAGENAVIGATIONCLASS="page_div">
+										</CMSPRO_DOCUMENTS>
+									</ul>
+									<div class="page_num"><div id="page_div"></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 高级搜索弹框 -->
+			<div class="mask">
+				<div class="maskBox">
+					<div class="maskHeader">高级检索</div>
+					<div class="maskCon">
+						<div class="maskConLeft">
+							<ul>
+								<li>标 题</li>
+								<li>主题分类</li>
+								<li>体裁分类</li>
+								<li>发布时间</li>
+								<li>废止时间</li>
+								<li>部分正文</li>
+							</ul>
+						</div>
+						<div class="maskConRight">
+							<ul>
+								<li>
+									<input class="maskLiDivInput" id="searchTitle" type="text" value="">
+								</li>
+								<li>
+									<div class="maskLiDiv maskOption" id="maskOption1" onclick="maskOption(1,this)"></div>
+									<span class="maskRspan">机构分类</span>
+									<div class="maskLiDiv maskOption" id="maskOption2" onclick="maskOption(2,this)"></div>
+								</li>
+								<li>
+									<div class="maskLiDiv maskOption" id="maskOption3" onclick="maskOption(3,this)"></div>
+									<span class="maskRspan">发文字号</span>
+									<input class="textNumber maskLiDivInput" type="text" value="">
+								</li>
+								<li>
+									起始日期
+									<div class="maskLiDiv maskLiDivS" id="maskLiDivS1" onclick="maskLiDivS(1)"></div>
+									截止日期	
+									<div class="maskLiDiv maskLiDivS" id="maskLiDivS2" onclick="maskLiDivS(2)"></div>
+								</li>
+								<li>
+									起始日期
+									<div class="maskLiDiv maskLiDivS" id="maskLiDivS3" onclick="maskLiDivS(3)"></div>
+									截止日期	
+									<div class="maskLiDiv maskLiDivS" id="maskLiDivS4" onclick="maskLiDivS(4)"></div>
+								</li>
+								<li>
+									<textarea class="seachBfzw" name="textarea" cols="45" rows="5"></textarea>
+								</li>
+							</ul>
+							<div class='calendar' ></div>
+						</div>
+					</div>
+					<div class="ydMaskCon ">
+						<div class="ydConLiLeft">
+							<ul >
+								<li><span>标题</span></li>
+								<li><span>主题分类</span></li>
+								<li><span>机构分类</span></li>
+								<li><span>体裁分类</span></li>
+								<li><span>发文字号</span></li>
+								<li><span>发布起始</span></li>
+								<li><span>发布截止</span></li>
+								<li><span>废止起始</span></li>
+								<li><span>废止截止</span></li>
+								<li><span>部分正文</span></li>
+							</ul>
+						</div>
+						<div class="ydConLiRight">
+							<ul>
+								<li><input type="text" value="" class="maskLiDivInputYd" id="maskTitle"></li>
+								<li class="maskLiDivYd ydRight" id="maskLiDivYd1" onclick="maskOption(1,this)"></li>
+								<li class="maskLiDivYd ydRight" id="maskLiDivYd2" onclick="maskOption(2,this)"></li>
+								<li class="maskLiDivYd ydRight" id="maskLiDivYd3" onclick="maskOption(3,this)"></li>
+								<li><input type="text" value="" class="maskLiDivInputYd" id="maskTexNum"></li>
+								<li class="maskLiDivYd" onclick="maskLiDivS(1)" id="maskLiDivS5"></li>
+								<li class="maskLiDivYd" onclick="maskLiDivS(2)" id="maskLiDivS6"></li>
+								<li class="maskLiDivYd" onclick="maskLiDivS(3)" id="maskLiDivS7"></li>
+								<li class="maskLiDivYd" onclick="maskLiDivS(4)" id="maskLiDivS8"></li>
+								<li><textarea class="seachBfzwYd" name="" id="maskContent" cols="35" rows="5"></textarea></li>
+							</ul>
+						<div class='calendar' ></div>
+						</div>
+						<div class="clearBoth"></div>
+					</div>
+					<div class="maskFoot">
+						<span class="maskSearch"><a href="javascript:;" onclick="searchSure(1)">检索</a></span>
+						<span class="maskSearchNo"><a href="javascript:;" onclick="searchSure(2)">重置</a></span>
+					</div>
+					<div class="maskClose"><a href="javascript:;" id="maskClose">×</a></div>
+				</div>
+				<div class="maskO">
+					<div class="optionMask">
+						<div class="optionMaskH">
+							<span>选择</span><span><a href="javascript:;" class="closeOption">×</a></span>
+						</div>
+						<div class="optionMaskCon">
+							<ul class="svobjcatContent" id="svobjcatContentMask"></ul>
+							<ul class="organcatContent" id="organcatContentMask"></ul>
+							<ul class="themecatContent" id="themecatContentMask"></ul>
+						</div>
+						<div class="optionSure"><a href="javascript:;" class="closeOption" >确定</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="prompt">请输入内容!</div>
+		</div>
+	<script type="text/javascript" src="/js/chinatax/base_page.js"></script>
+	</body>
+	<script type='text/javascript' src="/js/chinatax/calendar.js"></script>
+	<script type="text/javascript" src="/js/chinatax/base_directory.js"></script>
+</html>
+

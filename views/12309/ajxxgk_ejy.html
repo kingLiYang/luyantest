@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
+    <title id="title">重要案件信息 - 人民检察院案件信息公开网</title>
+    <meta name="keywords" content="<CMSPRO_CHANNEL field='keyword'></CMSPRO_CHANNEL>">
+    <meta name="description" content="<CMSPRO_CHANNEL field='memo'></CMSPRO_CHANNEL>">
+    <link rel="stylesheet" href="/css/12309/common.css">
+    <link rel="stylesheet" href="/css/12309/ajxxgk_ejy.css">
+    <script type="text/javascript" src="/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/js/12309/left_nav.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/lib/html5shiv.js"></script>
+    <script src="/lib/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" language="javascript">
+        var regionID = "<%= locals.region %>" || "gj",
+                channelWebPath = "<%= locals.channelWebPath %>" || "",
+                regionName = "<%= locals.regionName %>" || "最高人民检察院",
+                channelLevels = "<%= locals.channelLevels %>"|| '';
+    </script>
+    <script type="text/javascript" src="/js/12309/ajxxgk_ejy.js"></script>
+    <script type="text/javascript" src="/js/12309/region.js"></script>
+</head>
+<body>
+<div class="bg_all"></div>
+<div class="container w1200 bgfff pd26">
+    <div class="dqfb_list">
+        <ul id="region" class="dqfb">
+
+        </ul>
+    </div>
+    <div class="column mt25">
+        <div class="w271 fl mr20">
+            <div class="lmtitle">
+                <span id="regionName_1" class="title">北京</span>
+            </div>
+            <ul id="channelDiv" class="sidebar_ej">
+
+            </ul>
+        </div>
+        <div class="w858 fl">
+            <div class="Breadcrumb">
+                <p>当前位置：<span id="regionName"></span></p>
+            </div>
+            <div class="ajbIcon">
+                <dl class="dl1">
+                    <dt><a target="_blank" href=""><img src="../../images/12309/ajxxgk/ic1.png" alt=""></a></dt>
+                    <dd><a href="" target="_blank">案件程序性信息查询</a></dd>
+                </dl>
+                <dl class="dl2">
+                    <dt><a target="_blank" href=""><img src="../../images/12309/ajxxgk/ic2.png" alt=""></a></dt>
+                    <dd><a href="">申请阅卷/会见</a></dd>
+                </dl>
+                <dl class="dl3">
+                    <dt><a target="_blank" href=""><img src="../../images/12309/ajxxgk/ic3.png" alt=""></a></dt>
+                    <dd><a href="">提供证据材料</a></dd>
+                </dl>
+                <dl class="dl4">
+                    <dt><a target="_blank" href=""><img src="../../images/12309/ajxxgk/ic4.png" alt=""></a></dt>
+                    <dd><a href="">要求听取意见</a></dd>
+                </dl>
+                <dl class="dl5">
+                    <dt><a target="_blank" href=""><img src="../../images/12309/ajxxgk/ic5.png" alt=""></a></dt>
+                    <dd><a href="">申请变更（解除）强制措施</a></dd>
+                </dl>
+                <dl class="dl6">
+                    <dt><a target="_blank" href=""><img src="../../images/12309/ajxxgk/ic6.png" alt=""></a></dt>
+                    <dd><a href="">申请自行收集证据材料</a></dd>
+                </dl>
+                <dl class="dl7">
+                    <dt><a target="_blank" href=""><img src="../../images/12309/ajxxgk/ic7.png" alt=""></a></dt>
+                    <dd><a href="">申请收集（调取）证据材料</a></dd>
+                </dl>
+            </div>
+            <div class="commonList_con">
+                <div class="tiTle mt25">
+                    <h3 class="fl"><a href="">重要案件信息</a></h3>
+                    <a id="renderToImp" href="javascript:;" target="_blank" class="fr">更多&gt;&gt;</a>
+                    <p class="clear"></p>
+                </div>
+                <ul class="list_ul">
+                    <CMSPRO_DOCUMENTS id="impFile" DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" CHANNELCODE="">
+
+                    </CMSPRO_DOCUMENTS>
+                    <div class="tiTle mt25">
+                        <h3 class="fl"><a href="">法律文书公开</a></h3>
+                        <a id="renderToLaw" href="javascript:;" target="_blank" class="fr">更多&gt;&gt;</a>
+                        <p class="clear"></p>
+                    </div>
+                    <ul class="list_ul">
+                        <CMSPRO_DOCUMENTS id="lawFile" DOCUMENTTYPE="0|1|2|3" NUM="6" STARTPOS="0" CHANNELCODE="">
+
+                        </CMSPRO_DOCUMENTS>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content=" width=device-width,user-scalable=no,initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="<CMSPRO_CHANNEL FIELD='channelKeyword' ></CMSPRO_CHANNEL>">
+	<meta name="description" content="<CMSPRO_CHANNEL FIELD='channelDescribe'></CMSPRO_CHANNEL>">
+	<title>国家税务总局</title>
+	<link rel="stylesheet" href="/css/chinatax/common.css">
+	<link rel="stylesheet" href="/css/chinatax/list.css">
+	<link rel="stylesheet" href="/css/chinatax/base_page.css">
+    <script type="text/javascript" src="/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="BreadcrumbNav" changeCode = "<%=channelCode%>" channelid = "<%=channelId%>"><span class="wz">您所在的位置：</span><p><a href="/chinatax/index.html" target="_parent">首页</a>&nbsp;&gt;&nbsp;<a href="/chinatax/n810341/index.html" target="_parent">税收政策</a>&nbsp;&gt;&nbsp;<span>税务公报</span></p>
+		</div>
+		<div class="common">
+			<div class="fl w700">
+				<div class="common_list">
+					<div class="title">
+						<a href="javascript:;" class="codeChannelName"><%=channelName%></a>
+						<div class="bulletin_btn fr">
+							<a href="javascript:;" class="bulletin_btn_issue " onclick = "changeCode(1)">上一期</a>
+							<a href="javascript:;" class="bulletin_btn_issue" onclick = "changeCode(2)">下一期</a>
+							<a href="javascript:;" class="bulletin_btn_issue bulletin_btn_hide" onclick = "changeCode(3)">返回</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<h3 class="gb">目录</h3>
+					<ul class="list">
+						<CMSPRO_DOCUMENTS id="gb_list" DOCUMENTTYPE="0|1|2|3" NUM="" STARTPOS="0" CHANNELCODE="" PAGESIZE="20" PAGENAVIGATIONID="page_div" PAGENAVIGATIONCLASS="page_div">
+						</CMSPRO_DOCUMENTS>
+					</ul>
+					<div class="page_num"><div id="page_div"></div></div>
+				</div>
+				<div class="boder"></div>
+			</div>
+			<div class="fr w280">
+				<div class="swgbright" style="margin-top: 0;">
+					<p><img src="../../images/chinatax/comunique/swgb.jpg" alt="" /></p>
+					<p><strong>主办单位：</strong>国家税务总局办公厅</p>
+					<p><strong>编辑出版：</strong>《国家税务总局公报》编辑部</p>
+					<p><strong>邮政编码：</strong>100038</p>
+					<p><strong>国际统一刊号：</strong>ISSN671-7015</p>
+					<p><strong>国内统一刊号：</strong>CN11-4849/D</p>
+				</div>
+				<div class="bulletin_search">
+					<div class="bulletin_search_title">公报搜索</div>
+					<div class="bulletin_search_criteria">
+						<select id="searchinfo">
+							<option value="title">按标题</option>
+							<option value="content">按正文</option>
+						</select>
+						<input type="text" id="searchText">
+					</div>
+					<div class="bulletin_search_btn">
+						<a href="javascript:;" onclick="searchGbContent(1)">搜索</a>
+						<a href="javascript:;" onclick="searchGbContent(2)" style="margin-left:15px;">重置</a>
+					</div>
+					<div class="prompt">请输入内容!</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+<script type="text/javascript" src="/js/chinatax/base_page.js"></script>
+<script type="text/javascript" src="/js/chinatax/communique.js"></script>
+</body>
+</html>

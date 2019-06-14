@@ -1,0 +1,130 @@
+.container { padding: 0;}
+.w1200 { width: 1200px; margin: 0px auto; box-sizing: border-box;}
+a,a:hover{text-decoration: none;}
+.mt20 { margin-top: 20px;}
+.pd35 { padding:20px 35px;}
+.pd26_20 { padding: 26px 26px 15px; border-radius: 5px;}
+.pd26 { padding: 26px; border-radius: 5px;}
+ul.dqfb{width: 100%; /* background: #ebf6fc; */  background:url(../../images/12309/ajxxgk/dq_bg.png) no-repeat left top; background-size: 100% 100%; overflow: hidden; padding: 18px 26px 30px; box-sizing: border-box;}
+ul.dqfb li{padding: 7px 13px; float: left;}
+ul.dqfb li a{font-size: 16px; color: #104c6e; display: inline-block;}
+ul.dqfb li.on{background: #0d80b6;}
+ul.dqfb li.on a{color: #fff;}
+.ajbIcon{width: 100%; margin-top: 27px; overflow: hidden; background: #fff; box-sizing: border-box;}
+.ajbIcon dl{ float: left; width: 13.6%; height: 282px; text-align: center; box-sizing: border-box; margin-right: 9px; padding-top: 45px;}
+.ajbIcon .dl1{background: url(../../images/12309/ajxxgk/tu1.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl2{background: url(../../images/12309/ajxxgk/tu2.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl3{background: url(../../images/12309/ajxxgk/tu3.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl4{background: url(../../images/12309/ajxxgk/tu4.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl5{background: url(../../images/12309/ajxxgk/tu5.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl6{background: url(../../images/12309/ajxxgk/tu6.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl7{background: url(../../images/12309/ajxxgk/tu7.png) no-repeat left top; background-size: 100% 100%; margin-right: 0;}
+.ajbIcon dd{padding: 20px 13px; text-align: center; font-weight: bold;}
+.ajbIcon dd a{ font-size: 16px; color: #fff; line-height: 24px; }
+.ajbIcon .dl1 dd{padding: 15px 26px;}
+.ajbIcon .dl1 dd a{font-size: 20px; line-height: 32px;}
+.ajbIcon dl dt a img{ transition: 0.5s linear;}
+.ajbIcon dl dt a img:hover{transform: rotate(360deg); -moz-transform: rotate(360deg); -o-transform: rotate(360deg); -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg);}
+.zyaj{margin-top: 27px;}
+.channel_tit1{ height: 53px; background:url(../../images/12309/ajxxgk/tit_bg.png) no-repeat center center; overflow: hidden; position: relative; margin-bottom: 10px;}
+.channel_tit1 h4{width: 623px; height: 53px; margin: 0 auto; background:url(../../images/12309/ajxxgk/tit1.png) no-repeat center top; height: 53px;}
+.more{position: absolute; top: 0; right: 10px ; color: #999; line-height: 53px;}
+.ajtit1{height: 40px;  line-height: 40px; background: #4b9fde; color: #fff; font-size: 18px; text-align: center;}
+.bg2{background: #1ec5c6; }
+.bg3{background: #9d8cdb; }
+.mr26{margin-right: 26px;}
+.w336{width: 31.8%;}
+.bantp{width: 100%; height: 123px; margin: 27px 0;}
+.channel_tit2{margin-bottom: 10px;}
+.channel_tit2 h4{ background:url(../../images/12309/ajxxgk/tit2.png) no-repeat center top; }
+.w50{width: 48%;}
+.w50 dl{overflow: hidden;}
+.w50 dl dt{width: 20%; float: left; margin-top: 10px;}
+.w50 dl dt img{vertical-align: middle;}
+.w50 dl dd{float: left; width: 60%;}
+.w50 dl dt a img{ transition: 0.5s linear;}
+.w50 dl dt a img:hover{transform: rotate(360deg); -moz-transform: rotate(360deg); -o-transform: rotate(360deg); -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg);}
+.w50 dl dd .hzlb{ border-bottom: 1px solid #dcdcdc; font-size: 16px; position: relative; margin-bottom: 10px;}
+.w50 dl dd .hzlb a{font-size: 16px; height: 34px; line-height: 34px; }
+.w50 dl dd .hzlb a i{color: #0d80b6; font-size: 24px;padding-right: 10px;}
+.w50 dl dd .hzlb a.ajhz_tit{border-bottom: 2px solid #44b8f4; position: relative; bottom: -1px; padding-bottom: 5px; padding-top: 5px;}
+.mr30{margin-right: 4%;}
+.w50 dl dd .hzlb a.colore0{border-bottom:2px solid #e06462;}
+.w50 dl dt dd .hzlb{float:left; overflow: hidden;}
+.flwsgk {margin-bottom: 27px;}
+/* 列表 */
+ul.list_ul{margin-top: 12px;}
+ul.list_ul li{line-height: 36px; color: #333; background: url(../../images/12309/ajxxgk/circle.png) no-repeat left center; padding-left: 23px; overflow: hidden;}
+ul.list_ul li b{color: #104c6e; padding-right: 10px;}
+ul.list_ul li a{ color: #333; font-size: 16px; display: inline-block; width: 100%; float:left;overflow: hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;white-space:nowrap;}
+
+/*标题  tab切换标题*/
+.channel_tit3{overflow: hidden; height: 50px;}
+.channel_tit3 a{ float: left; display: block; margin-right: 6px; border: none; color: #fff; width: 19.58%; background: #61abe2; padding: 8px 0; text-align: center; font-size: 18px; }
+.channel_tit3 a.noMargin{margin-right: 0;}
+.channel_tit3 a:hover,.channel_tit3 a.active{padding: 8px 0 19px; background:url(../../images/12309/ajxxgk/active_bg.png) no-repeat; color: #fff; font-size: 18px; background-size: 100% 100%;}
+
+/*切换内容*/
+.tab-content{}
+.tab-content>.tab-pane{ display: none;}
+.tab-pane.on{ display: block;}
+.tab{ position: relative;}
+.tab a.more{ color: #a9a9a9; position: absolute; top: 0px; right: 10px; font-size: 14px;}
+s.zyaj {position: relative;}
+.tab-content>.tab-pane .list_ul{margin-top: 8px; overflow: hidden;}
+.tab-content>.tab-pane li a{ color: #333; font-size: 16px;display: inline-block; width: 45%; float:left;overflow: hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;white-space:nowrap;}
+.tab-content>.tab-pane li span{ float: right;color: #666;font-size: 14px;}
+.tab-content>.tab-pane li span.ph{color: #333; float: left; font-size: 16px;}
+.tab-content>.tab-pane li span{ float: right;color: #666;font-size: 14px;}
+
+
+@media (max-width: 991px){
+.pd26_20,.pd26{padding: 0;}
+.w1200,.ajbIcon,.zyaj,.flwsgk,.ajhz{ width: 100%; padding: 2%; box-sizing: border-box;}
+ul.dqfb{background: #ebf6fc; border-radius: 5px;}
+.w336{width: 100%; margin-top: 15px;}
+ul.dqfb,.ajbIcon,.zyaj,.flwsgk,.ajhz{padding: 2%;}
+.bantp,.bantp img{width: 100%; height: auto;}
+.ajbIcon dl{width: 48%; margin: 0 4% 3% 0; height: 266px;}
+.ajbIcon dl:nth-child(2n){margin-right: 0;}
+.channel_tit1 h4 { height: 46px; background: url(../../images/12309/ajxxgk/tit1.png) no-repeat center center;  background-size: 80%;}
+.channel_tit2 h4 { height: 46px; background: url(../../images/12309/ajxxgk/tit2.png) no-repeat center center;  background-size: 80%;}
+.w50{width: 100%;}
+.w50 dl dt{width: 30%; text-align: center;}
+.w50 dl dt img{margin: 0 auto; }
+.tab a.more {position: static; background: #eeeeee; color: #666666; padding: 0 15px; line-height: 36px; display: block; text-align: center; border-radius: 6px; margin-top: 10px;}
+.channel_tit3{height: auto; }
+.channel_tit1 h4{width: auto;}
+.channel_tit3 a{width: 32.6%; box-sizing: border-box; margin-bottom: 10px;}
+.channel_tit3 a:nth-child(3){margin-right: 0;}
+.channel_tit3 a.active{padding: 8px 0; background: #0d80b6;}
+.tab-content>.tab-pane li{height: auto; background: url(../../images/12309/ajxxgk/circle.png) no-repeat left 16px;}
+.tab-content>.tab-pane li a{width: 100%;}
+.tab-content>.tab-pane li span.ph{font-size: 14px;}
+.ajbIcon .dl1{background: url(../../images/12309/ajxxgk/tu_m1.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl2{background: url(../../images/12309/ajxxgk/tu_m2.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl3{background: url(../../images/12309/ajxxgk/tu_m3.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl4{background: url(../../images/12309/ajxxgk/tu_m4.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl5{background: url(../../images/12309/ajxxgk/tu_m5.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl6{background: url(../../images/12309/ajxxgk/tu_m6.png) no-repeat left top; background-size: 100% 100%; }
+.ajbIcon .dl7{background: url(../../images/12309/ajxxgk/tu_m7.png) no-repeat left top; background-size: 100% 100%; margin-right: 0;}
+}
+@media (max-width: 420px){
+.channel_tit1 h4{width: auto; background-size: 100%;}
+.channel_tit3 a{font-size: 14px; width: 32%;}
+.channel_tit3 a:hover,.channel_tit3 a.active{font-size: 14px;}
+.channel_tit3 a.xsss{width: 50%;}
+.more{right: 0;}
+.ajbIcon .dl1 dd a{font-size: 16px;}
+.ajbIcon dd a{font-size: 16px;}
+.ajbIcon dl {height: 203px; padding-top: 25px;}
+.ajbIcon .dl1 dd { padding: 7px 8px;}
+.ajbIcon dd { padding: 15px 8px;}
+
+}
+@media (max-width: 375px){
+
+}
+@media (max-width: 320px){
+.channel_tit3 a{width: 31%;}
+}

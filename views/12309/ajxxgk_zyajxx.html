@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<title>重要案件信息</title>
+	<meta name="keywords" content="<CMSPRO_CHANNEL field='keyword'></CMSPRO_CHANNEL>">
+	<meta name="description" content="<CMSPRO_CHANNEL field='memo'></CMSPRO_CHANNEL>">
+	<link rel="stylesheet" href="/css/12309/common.css">
+  	<link rel="stylesheet" href="/css/12309/ajxxgk_zyajxx.css">
+  	<link rel="stylesheet" href="/css/12309/zxf_page.css">
+	<script type="text/javascript" src="/lib/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" language="javascript">
+			var channelWebPath = "<%= locals.channelWebPath %>",
+					channelLevels = "<%= locals.channelLevels %>" || '';
+		</script>
+		<script type="text/javascript" src="/js/12309/region.js"></script>
+		<script type="text/javascript" src="/js/12309/ajxxgk_zyajxx.js"></script>
+   	<!--[if lt IE 9]>
+		<script src="/lib/html5shiv.js"></script>
+		<script src="/lib/respond.min.js"></script>
+    <![endif]-->
+	</head>
+<body>
+<div class="bg_all"></div>
+<div class="container w1200 bgfff pd26">
+	<div class="dqfb_list">
+		<ul id="region" class="dqfb">
+
+		</ul>
+	</div>
+	<div class="column mt25">
+		<div class="w271 fl mr20">
+			<div class="lmtitle">
+				<span id="localName" class="title_1 spanClass_1">重要案件信息</span>
+			</div>
+			<ul id="fileType" class="sidebar">
+				 <li class="active"><a href="javascript:;" target="_self">全部案件</a></li>
+				 <li codeId="676397327ff84660bb5c35193c3724aa"><a href="javascript:;" target="_self">职务犯罪案件</a></li>
+				 <li codeId="22bce03a7418435dbfd1f14fd408769c"><a href="javascript:;" target="_self">热点刑事案件</a></li>
+				 <li codeId="8c3e0e69ad714bfbabcdcfa0281a9689"><a href="javascript:;" target="_self">典型案例</a></li>
+				 <li codeId="acca56b6b7c14e12be8e7fdab53a8d94"><a href="javascript:;" target="_self">其他案件</a></li>
+			</ul>
+		</div>
+		<div class="w858 fl">
+			<div class="Breadcrumb">
+				<p>当前位置：<span id="regionName">重要案件信息</span></p>
+			</div>
+		<div class="commonList_con">
+			<ul class="list_ul">
+				<CMSPRO_DOCUMENTS id="impFile" DOCUMENTTYPE="0|1|2|3" NUM="" STARTPOS="0" CHANNELCODE="" PAGESIZE="20" PAGENAVIGATIONID="page_div" PAGENAVIGATIONCLASS="page_div">
+					<li><a target="_blank" href="<CMSPRO_DOCUMENT FIELD='url'></CMSPRO_DOCUMENT>"><b>[白山市浑江区院]</b><CMSPRO_DOCUMENT FIELD="title">标题</CMSPRO_DOCUMENT></a><span class="date"><CMSPRO_DOCUMENT FIELD="publishedTime" DATEFORMAT="yyyy-MM-dd">时间</CMSPRO_DOCUMENT></span></li>
+				</CMSPRO_DOCUMENTS>
+			</ul>
+			<div class="page_num"><div id="page_div"></div></div>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<script type="text/javascript" src="/js/12309/zxf_page.js"></script>
+</body>
+</html>

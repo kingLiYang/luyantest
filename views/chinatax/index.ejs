@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="/lib/jquery-1.11.1.min.js"></script>
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <link rel="alternate" media="handheld" href="#">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <title><%=channelName%></title>
+    <link rel="stylesheet" type="text/css" href="http://sousuo.gov.cn/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="http://sousuo.gov.cn/static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="http://sousuo.gov.cn/static/css/columnlist.css">
+    <link rel="stylesheet" type="text/css" href="http://sousuo.gov.cn/static/css/news.css">
+    <link href="http://sousuo.gov.cn/static/css/common_image.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="content">
+    <div class="padd">
+        <!--面包屑开始-->
+        <div class="BreadcrumbNav">
+            您所在的位置：<a href="http://www.gov.cn">首页</a>  &gt; <%=channelName%>
+        </div>
+        <!--面包屑结束-->
+        <div class="news_box">
+            <div class="tit_tab">
+                <div class="tit_s01"><span class="bg01">&nbsp;</span>
+                    <span class="tabg"><%=channelName%></span>
+                    <span class="bg02">&nbsp;</span></div>
+            </div>
+            <div class="list list_1 list_2">
+                <ul class="listTxt" id="body">
+                    <%if(data.results.length > 0){%>
+                    <% for(var i=0; i<data.results.length; i++) {%>
+                    <li>
+                        <div class="title"><a href="<%= data.results[i].url %>" target="_blank">[<%= data.results[i].channelName %> ]  <%= data.results[i].title %></a></div>
+                        <div style="float: right" class="date"><%= data.results[i].publishedTimeStr.trim().substring(0,10)%> </div>
+                    </li>
+                    <% } %><% } %>
+                </ul>
+            </div>
+            <div class="newspage cl">
+                <ul>
+                    <li><a href="<%=locationUrl%><%=data.page>1?data.page-1:data.page%>">上一页</a></li>
+                    <%if(data.total/data.rows>=10){%>
+                    <%if(data.page-5<=0){%>
+                    <%var a = 1%>
+                    <%}%>
+                    <%if(data.page-5>0 && data.page+5<=(data.total/data.rows)){%>
+                    <%var a = data.page-5%>
+                    <%}%>
+                    <%if(data.page+5>(data.total/data.rows)){%>
+                    <%var a = data.total/data.rows-9%>
+                    <%}%>
+                    <%for(var i=a; i<a+10; i++){%>
+                    <%if(i == data.page){%>
+                    <li><a style="background-color:#9a9a9a" href="<%=locationUrl%><%=i%>"><%=i%></a></li>
+                    <%}else{%>
+                    <li><a href="<%=locationUrl%><%=i%>"><%=i%></a></li>
+                    <%}}%><%}else{%>
+                    <%for(var i=1; i<data.total/data.rows+1; i++){%>
+
+                    <%if(i == data.page){%>
+                    <li><a style="background-color:#9a9a9a" href="<%=locationUrl%><%=i%>"><%=i%></a></li>
+                    <%}else{%>
+                    <li><a href="<%=locationUrl%><%=i%>"><%=i%></a></li>
+                    <%}%>
+                    <%}%><%}%>
+
+                    <li><a class="next" href="<%=locationUrl%><%=data.page<data.total/data.rows?parseInt(data.page)+1:data.page%>">下一页</a></li>
+                    <li>共<%=Math.ceil(data.total/data.rows)%>页</li>
+                    <li><span>到第</span><input id="pnum" class="textnum" type="text" size="1" value=<%=data.page<Math.ceil(data.total/data.rows)?parseInt(data.page)+1:data.page%>><span>页</span></li>
+                    <li><input type="button" class="newspageBtn" value="确定" id="submit"></li>
+                </ul>
+            </div>
+
+            <!-- page -->
+
+            <style type="text/css">
+                .title{
+                    width: 76%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    float: left;
+                }
+                .newspage {
+                    padding: 50px 0px 36px 14px;
+                    height: 23px;
+                    font-size: 12px;
+                }
+
+                .newspage ul li {
+                    float: left;
+                    margin: 0 3px;
+                }
+
+                .newspage ul li a {
+                    border: 1px solid #b2b2b2;
+                    color: #015092;
+                    padding: 3px 8px;
+                }
+
+                .newspage ul li.on a {
+                    border: none;
+                    background: #0068b7;
+                    color: #fff;
+                    border: 1px solid #b2b2b2;
+                }
+
+                .newspage ul span {
+                    color: #333;
+                    display: block;
+                    float: left;
+                }
+
+                .newspage ul span input {
+                    width: 43px;
+                    line-height: 23px;
+                    color: #333;
+                    border: 1px solid #b2b2b2;
+                    margin: 0 5px;
+                    background: none;
+                }
+
+                .newspage ul span input.newspageBtn {
+                    cursor: pointer;
+                }
+            </style>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        var locationUrl = "<%=locationUrl%>";
+        $("#submit").click(function(){
+            window.location.href = locationUrl.replace(/&amp;/g, "&") + $("#pnum").val();
+        });
+    })
+</script>
+
+</body>
+</html>

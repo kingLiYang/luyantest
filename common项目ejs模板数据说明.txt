@@ -1,0 +1,16 @@
+﻿一、数据说明：
+locationUrl: 访问地址及参数(如：http://localhost:3000/common/search/c3c277a09e8245b38a894806429ab906?_isAgg=false&_pageSize=20&_template=index&_channelName=&page=)
+
+channelName: 栏目名称
+
+data.results: 稿件数据列表【title:标题，url: 稿件地址，memo:摘要，content:正文，channelName: 栏目名称，publishedTime: 稿件发布日期（时间戳格式）， publishedTimeStr: 稿件发布日期（2019-04-22 12:02:02格式），manuscriptId:稿件id，channelId:栏目id，websiteId:站点id，channelLevels:栏目全路径】
+
+data.total: 稿件总数
+
+data.rows: 稿件每页数量
+
+data.page: 当前页码
+
+
+
+
