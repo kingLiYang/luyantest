@@ -1,4 +1,4 @@
-var express = require('express');
+﻿var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -6,6 +6,11 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var debug = require('debug')('websearch-new:server');
 var http = require('http');
+
+
+// 我是李洋  哈哈哈   卢燕是我的女神  真的
+
+
 
 // 引入项目所需路由、配置
 // var routes = require('./routes/12309');  // 12309 路由
