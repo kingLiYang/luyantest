@@ -17,6 +17,6 @@
     "needle": "^2.2.4",
     "redis": "^2.8.0",
     "serve-favicon": "~2.4.2",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
